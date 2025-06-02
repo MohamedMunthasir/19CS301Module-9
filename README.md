@@ -1,8 +1,10 @@
-# 19CS301Module-9
-### EX: 9.1                                            MATRIX OPERATIONS
-### Aim: To Write a Python Program to subtract two matrices by reading the matrix from the user.
+# 19CS301-Module-9
+- **Name:** Nevil Joe Ferdin P
+- **Registration Number:** 212222050041
+## ExNo: 9.1 MATRIX OPERATIONS
+### Aim: 
+To Write a Python Program to add two matrices by reading the matrix from the user.
 ### Algorithm:
-
 STEP 1: Start.
 
 STEP 2: Create a variable r and c for rows and columns of the matrix.
@@ -11,13 +13,14 @@ STEP 3: Get the value of r and c from user.
 
 STEP 4: Define a function to create a matrix.
 
-STEP 5 : Define another function to subtract the matrices.
+STEP 5 : Define another function to  add the matrices.
 
 STEP 6: Print the result.
 
 STEP 7 : Stop.
+
 ### Program:
-```
+```python
 def create_matrix(n,m):
          M = []
          for i in range(n):
@@ -33,69 +36,66 @@ B = create_matrix(int(r),int(c))
 C = []
 for i in range(int(r)):
          R = []
- 
-
         for j in range(int(c)):
-                item = A[i][j]-B[i][j]
-   R.append(item)
+                item = A[i][j]+B[i][j]
+        R.append(item)
 C.append(R)
 print(A)
 print(B)
 print(C)
 ```
-### Output:
-![image](https://github.com/user-attachments/assets/b1125b13-d26e-4404-acce-7dd2c1d2011c)
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/fd1911c9-5a3c-4d50-9a0d-69c4369802df)
 
-### Result: Thus, the given program is implemented and executed successfully .
+### Result:
+Thus, the given program is implemented and executed successfully .
 
-### EX: 9.2 LIST COMPREHENSION
-### Aim: To Write a Python class program to generate all even numbers between 200 and 300 and store in a list using list comprehension.
+## ExNo: 9.2 LIST COMPREHENSION
+### Aim:
+To Write a Python Program to read n elements in the list and separate  odd and even elements in the list.
 ### Algorithm:
-STEP 1: Start.
+STEP 1: Start the program.
 
-STEP 2: Create a class.
+STEP 2: Input the number of elements n.
 
-STEP 3: Create variable a,b, and c for upper limit,lower limit and condition.
+STEP 3: Initialize an empty list l.
 
-STEP 4: Intialise the values in the class.
+STEP 4: Read n integers from the user and store them in list l.
 
-STEP 5 : Define a method and using list comprehension calculate the result.
+STEP 5: Create a list l3 by including only elements from l that are odd (i.e., i % 2 != 0).
 
-STEP 6: Print the result.
+STEP 6: Create a list l2 by including only elements from l that are even (i.e., i % 2 == 0).
 
-STEP 7 : Stop.
+STEP 7: Print the original list l.
 
+STEP 8: Print the odd list l3.
+
+STEP 9: Print the even list l2.
+
+STEP 10: Stop
 ### Program:
+```python
+n = int(input())
+l = [int(input()) for i in range(n)]
+l3=[i for i in l if i%2!=0 ]
+l2 = [i for i in l if i%2==0 ]
+print(l)
+print(l3)
+print(l2)
 ```
-class program:
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/643f3a08-7707-45d9-9fee-d2daaaa117ad)
 
-      def  __init__(self,a,b,c):
-                self.a=a
-                self.b=b
-                self.c=c
-        def display(self):
-               even = [i for i in range(self.a,self.c+1,self.b)]
-               print(even)
-a = int(input())
-b = int(input())
-c = int(input())
-
-obj = program(a,b,c)
-obj.display()
-```
-### Output:
- ![image](https://github.com/user-attachments/assets/a9707d46-2d47-4472-a6b3-b407a6f6ef71)
-
-### Result: Thus, the given program is implemented and executed successfully .
-
-### EX: 9.3 ADVANCED LIST PROCESSING
-### Aim: To Write a Python program to Find the transpose of a matrix using list Comprehension.
-
+### Result:
+Thus, the given program is implemented and executed successfully .
+ 
+## ExNo: 9.3 ADVANCED LIST PROCESSING
+### Aim: 
+To Write a Python program to Find the transpose of a matrix using list Comprehension.
 ### Algorithm:
-
 STEP 1: Start.
 
-STEP 2: Create a variable r and c for rows and columns. 
+STEP 2: Create a variable r and c for rows and columns.
 
 STEP 3: Get the value of r and c from user.
 
@@ -106,9 +106,8 @@ STEP 5 : Using list comprehension find the transpose of the matrix.
 STEP 6: Print the result.
 
 STEP 7 : Stop.
-
 ### Program:
-```
+```python
 def create(r,c):
             M=[]
         for i in range(int(r)):
@@ -125,16 +124,14 @@ T = [[r[i]for r in matrix]for i in range(len(matrix[0]))]
  print(T)
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/411a227a-f44d-4b1a-b489-c7592dddbb67)
+![image](https://github.com/user-attachments/assets/c8c2de03-b9b4-4d50-86ba-51004da688c0)
 
-### Result: Thus, the given program is implemented and executed successfully .
- 
+### Result:
+Thus, the given program is implemented and executed successfully .
 
-
-### EX: 9.4       TOEPLITZ MATRIX
-### Aim: To Write a Python Program to check whether the given matrix is Toeplitz Matrix.
-
-
+# ExNo: 9.4 TOEPLITZ MATRIX
+### Aim: 
+To Write a Python Program to check whether the given matrix is Toeplitz Matrix.
 ### Algorithm:
 STEP 1: Start.
 
@@ -149,10 +146,8 @@ STEP 5 : Using the formula check for TOEPLITZ MATRIX .
 STEP 6: Print the result.
 
 STEP 7 : Stop.
-
-
 ### Program:
-```
+```python
 def create_matrix(n,m):
         M=[]
         for i in range(n):
@@ -183,9 +178,9 @@ if isThoeplitz(A):
        print(A,"is not a Toeplitz Matrix") print_matrix(A)
 ```
 ### Output:
+![image](https://github.com/user-attachments/assets/0ed7d16f-55eb-4f53-89f2-ceb6e834fd07)
 
-![image](https://github.com/user-attachments/assets/0fb8f81b-ab07-4b3e-b273-035a0f38566d)
+### Result: 
+Thus, the given program is implemented and executed successfully.
 
-### Result: Thus, the given program is implemented and executed successfully.
- 
 
